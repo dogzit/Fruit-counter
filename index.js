@@ -21,17 +21,19 @@ function add() {
   diff.innerText = a;
   total.innerText = a;
 
-  const removeButton = newDiv.querySelector(".removeButton");
-  removeButton.addEventListener("click", function () {
-    word.removeChild(newDiv);
-  });
-
   let countNumber = newDiv.querySelector(".countNumber").innerText;
   const increaseButton = newDiv.querySelector(".increaseButton");
   increaseButton.addEventListener("click", function () {
     countNumber = Number(countNumber) + 1;
     total.innerText = Number(total.innerText) + 1;
     newDiv.querySelector(".countNumber").innerText = countNumber;
+  });
+
+  const removeButton = newDiv.querySelector(".removeButton");
+  removeButton.addEventListener("click", function () {
+    word.removeChild(newDiv);
+    total.innerText = Number(total.innerText) - countNumber;
+    diff.innerText = Number(diff.innerText) - 1;
   });
 }
 
