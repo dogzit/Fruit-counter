@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.container {
+  border: "1px solid pink";
+  background-color: #4040ff;
+  border-radius: 16px;
+  width: fit-content;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+}
+.big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+#Header {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.different-big {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.total-big {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.fruitlist {
+  display: flex;
+  justify-content: center;
+}
+#word {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: #8080ff;
+  border-radius: 10px;
+  margin-right: 20px;
+  color: black;
+}
+.fruitlist {
+  size: 100px;
+}

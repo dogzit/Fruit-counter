@@ -14,12 +14,12 @@ function add() {
     word.removeChild(newDiv);
   }
   const newDiv = document.createElement("div");
-  newDiv.innerHTML = `<div style= " margin-top:15px ; display:flex; ga:10px;"><div style="display:flex">${input.value} <div style=" display:flex ;margin-left: 5px"> Count:<div class="countNumber">1</div></div><button style=" margin-left:10px" ; class="increaseButton">Increase</button> <button style=" margin-left:10px" ; class="removeButton">Remove</button></div>`;
+  newDiv.innerHTML = `<div style= " margin-top:15px ; display:flex; ga:10px;"><div style="display:flex">~ ${input.value} <div style=" display:flex ;margin-left: 5px"> Count:<div class="countNumber">1</div></div><button style=" margin-left:10px" ; class="increaseButton">Increase</button> <button style=" margin-left:10px" ; class="removeButton">Remove</button></div>`;
   word.appendChild(newDiv);
   input.value = "";
-  const a = word.childElementCount;
-  diff.innerText = a;
-  total.innerText = a;
+  // const a = word.childElementCount;
+  // diff.innerText = a;
+  // total.innerText = a;
 
   let countNumber = newDiv.querySelector(".countNumber").innerText;
   const increaseButton = newDiv.querySelector(".increaseButton");

@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div id="Header"><b>Fruit Counter</b></div>
-    <div class="fruitlist">
-      <input id="FruitInput" placeholder="Enter a fruit . . ." />
-      <button id="button">Add Fruit</button>
+    <div class="big-container">
+      <div class="container">
+        <div id="Header"><b>Fruit Counter</b></div>
+        <div class="fruitlist">
+          <input id="FruitInput" placeholder="Enter a fruit . . ." />
+          <button id="button">Add Fruit</button>
+        </div>
+        <div class="different-big">
+          ~ Different fruits of: <span id="different">0</span>
+        </div>
+        <div class="total-big">
+          ~ Total numbers of fruits: <span id="Total">0</span>
+        </div>
+        <div id="word"></div>
+      </div>
     </div>
-    <div>Different fruits of: <span id="different">0</span></div>
-    <div>Total numbers of fruits: <span id="Total">0</span></div>
-    <div id="word"></div>
-    <div></div>
   </body>
   <script src="./index.js"></script>
 </html>
